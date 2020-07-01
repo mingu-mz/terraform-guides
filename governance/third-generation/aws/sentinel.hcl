@@ -25,46 +25,46 @@ policy "require-private-acl-and-kms-for-s3-buckets" {
 }
 
 policy "restrict-ami-owners" {
-  source = "restrict-ami-owners.sentinel"
+  source = "aws/restrict-ami-owners.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-assumed-roles-by-workspace" {
-  source = "restrict-assumed-roles-by-workspace.sentinel"
+  source = "aws/restrict-assumed-roles-by-workspace.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-assumed-roles" {
-  source = "restrict-assumed-roles.sentinel"
+  source = "aws/restrict-assumed-roles.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-availability-zones" {
-  source = "restrict-availability-zones.sentinel"
+  source = "aws/restrict-availability-zones.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-current-ec2-instance-type" {
-  source = "restrict-current-ec2-instance-type.sentinel"
+  source = "aws/restrict-current-ec2-instance-type.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-db-instance-engines" {
-  source = "restrict-db-instance-engines.sentinel"
+  source = "aws/restrict-db-instance-engines.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-ec2-instance-type" {
-  source = "restrict-ec2-instance-type.sentinel"
+  source = "aws/restrict-ec2-instance-type.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-ingress-sg-rule-cidr-blocks" {
-  source = "restrict-ingress-sg-rule-cidr-blocks.sentinel"
+  source = "aws/restrict-ingress-sg-rule-cidr-blocks.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-launch-configuration-instance-type" {
-  source = "restrict-launch-configuration-instance-type.sentinel"
+  source = "aws/restrict-launch-configuration-instance-type.sentinel"
   enforcement_level = "advisory"
 }
