@@ -11,60 +11,60 @@ module "tfconfig-functions" {
 }
 
 module "aws-functions" {
-  source = "aws-functions/aws-functions.sentinel"
+  source = "./aws-functions/aws-functions.sentinel"
 }
 
 policy "enforce-mandatory-tags" {
-  source = "enforce-mandatory-tags.sentinel"
+  source = "./enforce-mandatory-tags.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "require-private-acl-and-kms-for-s3-buckets" {
-  source = "require-private-acl-and-kms-for-s3-buckets.sentinel"
+  source = "./require-private-acl-and-kms-for-s3-buckets.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-ami-owners" {
-  source = "aws/restrict-ami-owners.sentinel"
+  source = "./restrict-ami-owners.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-assumed-roles-by-workspace" {
-  source = "aws/restrict-assumed-roles-by-workspace.sentinel"
+  source = "./restrict-assumed-roles-by-workspace.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-assumed-roles" {
-  source = "aws/restrict-assumed-roles.sentinel"
+  source = "./restrict-assumed-roles.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-availability-zones" {
-  source = "aws/restrict-availability-zones.sentinel"
+  source = "./restrict-availability-zones.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-current-ec2-instance-type" {
-  source = "aws/restrict-current-ec2-instance-type.sentinel"
+  source = "./restrict-current-ec2-instance-type.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-db-instance-engines" {
-  source = "aws/restrict-db-instance-engines.sentinel"
+  source = "./restrict-db-instance-engines.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-ec2-instance-type" {
-  source = "aws/restrict-ec2-instance-type.sentinel"
+  source = "./restrict-ec2-instance-type.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-ingress-sg-rule-cidr-blocks" {
-  source = "aws/restrict-ingress-sg-rule-cidr-blocks.sentinel"
+  source = "./restrict-ingress-sg-rule-cidr-blocks.sentinel"
   enforcement_level = "advisory"
 }
 
 policy "restrict-launch-configuration-instance-type" {
-  source = "aws/restrict-launch-configuration-instance-type.sentinel"
+  source = "./restrict-launch-configuration-instance-type.sentinel"
   enforcement_level = "advisory"
 }
